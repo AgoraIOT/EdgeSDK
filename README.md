@@ -1,1 +1,1 @@
-# EdgeSDK
+# Agora Edge Apps Development Environment (AgoraEdgeSDK)
