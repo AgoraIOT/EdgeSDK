@@ -55,12 +55,12 @@ Contact Agora:
 1. Press F1 to open VS Code command pallet 
 1. Start typing "Remote-Containers: Open Folder in Container" and press enter
 
-![](images\remote_containers_open_folder.png)
+<img src=images\remote_containers_open_folder.png/>
 
 7. Browse to the location where agora-vscode-remote is cloned
 8. Select the top directory of the repo (the parent of .devcontainer directory) and press open
 9. Wait for the dev container to be built (_this can take several minutes the first time you launch the dev container_)
-![](images\building_image.PNG)
+<img src=images\building_image.PNG/>
 
 10. Once the build is done, VS Code will automatically remote into the container and install all the extensions needed for developing Agora Apps. You might get asked to acknowledge the installation of the extensions, you must agree
 11. Wait for all extensions to be installed. If reloading VS Code is required, you will be promoted to do so
@@ -73,7 +73,7 @@ You can either generate a new module or use the SDK to continue developing as ex
     ```bash
     setup-workspace.sh
     ```
-![](images\setup_workspace.PNG)
+<img src=images\setup_workspace.PNG/>
 
 2. When the workspace is completed successfully, you will see the following message: _Workspace setup is complete ..._ followed by an example showing you what to do next (which will be explained in the next couple of steps)
 3. Generate your first module using genMod: 
@@ -85,7 +85,7 @@ You can either generate a new module or use the SDK to continue developing as ex
     ```
 4. If everything goes well with the module code generation, you should see your module build should run successfully to validate your environment and module generation. For C++ modules you should also see the unit test result.
 
-![](images\cpp_build.PNG)
+<img src=images\cpp_build.PNG\>
 
 5. Browse the directory structure of the module in the file explorer on the left side
 6. Open README.md to get description of the module directory structure and details on how to build the code 
@@ -107,15 +107,15 @@ You need to do this one time setup to enable the use of IoT Edge Simulator to in
 > Redo these steps every time you remove the dev container 
 1. Connect Azure IoT Hub extension to the IoT Hub that has your dev device (command palette->Azure IoT Hub: Set IoT Hub Connection String->Enter  then enter the Hub connection string)
 
-![](images\set_connection_string.png)
+<img src=images\set_connection_string.png\>
 
 2. Setup IoT Edge Simulator (command palette->Azure IoT Edge: Setup IoT Edge Simulator->Enter, then select your dev device from the list)
 
-![](images\setup_simulator.png)
+<img src=images\setup_simulator.png/>
 
 3. Set module credentials in VSCode user settings (command palette->Azure IoT Edge: Set Module Credentials toUser Settings->Enter) 
 
-![](images\set_cred.png)
+<img src=images\set_cred.png/>
 
 ## Debug your module locally
 
@@ -134,7 +134,7 @@ Before starting a local debug session, if you have iotedge running on your host 
 ### C++
 1. Build your module code (command palette->Tasks: Run Build Task->Enter then select build-x86_64 from the list )
 
-![](images\build_x86.png)
+<img src=images\build_x86.png/>
 
 2. Launch a debug session (F5 or the debug symbol on the left side) 
 3. Add breakpoints and step through your code  
@@ -142,15 +142,15 @@ Before starting a local debug session, if you have iotedge running on your host 
 ### Python
 1. In VS Code go to debug view and select "HBM Launch" and click on launch (the green arrow)
 
-![](images\py_launch_hbm.PNG)
+<img src=images\py_launch_hbm.PNG/>
 
 2. Now switch the debug config to "Python Attach" and click on the green arrow
 
-![](images\py_attach.PNG) 
+<img src=images\py_attach.PNG/>
 
 3. Add breakpoints and step through your Python code
 
-![](images\py_debug.PNG)
+<img src=images\py_debug.PNG/>
 
 4. When done, disconnect the Python session and then stop the HBM session
 
