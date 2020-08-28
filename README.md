@@ -69,7 +69,7 @@ Contact Agora:
 You can either generate a new module or use the SDK to continue developing as existing one
 
 ### Generate a new module  
-1. Form the terminal in the panel at the bottom of the VS Code window (if not opened, you can open it from Terminal->New Terminal or "Ctr+Shift+`) run the following command:
+1. From the terminal in the panel at the bottom of the VS Code window (if not opened, you can open it from Terminal->New Terminal or "Ctr+Shift+`) run the following command:
     ```bash
     setup-workspace.sh
     ```
@@ -79,7 +79,7 @@ You can either generate a new module or use the SDK to continue developing as ex
 3. Generate your first module using genMod: 
     ```bash
     Example:
-        ./genMod.sh -l cpp -n my_module -c MyModule -i my-module
+        ./genMod.sh -l py -n my_module -c MyModule -i my-module
     For more help:
         ./genMod.sh -h
     ```
@@ -92,13 +92,13 @@ You can either generate a new module or use the SDK to continue developing as ex
 7. The generated code has a complete sample algorithm that builds and runs as a module, explore the code and use it as starting point to develop you own
 8. The complete API documentation can be found under "deps/hermes-base-cpp/doc/doxygen-cpp/html" 
 
-### Clone an exiting module
+### Clone an existing Agora Edge module
 Follow this steps if you already have an existing Agora module you would like to continue to develop and debug in this environment
 1. Form the terminal in the panel at the bottom of the VS Code window (if not opened, you can open it from Terminal->New Terminal or "Ctr+Shift+`) run the following command:
     ```bash
     git clone {your module repo URL}
     ```
-    > TIP: If you are working on multiple modules or multiple feature branches of the same module, you can create one environment for each module/branch and destroy it one done.
+    > TIP: If you are working on multiple modules or multiple feature branches of the same module, you can create one environment for each module/branch and destroy it once done.
 
 2. Open your module directory in VSCode move on to the next step to setup local debugging for your module
 
@@ -119,17 +119,18 @@ You need to do this one time setup to enable the use of IoT Edge Simulator to in
 
 ## Debug your module locally
 
-Before starting a local debug session, if you have iotedge running on your host OS, stop iotedge service and remove edgeHub container
+Before starting a local debug session, if you have iotedge running on your host OS, stop iotedge service and remove edgeHub container:
 
-    ```powershell
-    Windows 10, run powershell as administrator and stop the service from powershell:
-        Stop-Service iotedge
-    Linux:
-        sudo systemctl stop iotedge
     
-    Remove edgeHub:
-        docker rm edgeHub
-    ``` 
+   ```bash
+   Windows 10, run powershell as administrator and stop the service from powershell:
+      Stop-Service iotedge
+   Linux:
+      sudo systemctl stop iotedge
+    
+   Remove edgeHub:
+      docker rm edgeHub
+   ```
 
 ### C++
 1. Build your module code (command palette->Tasks: Run Build Task->Enter then select build-x86_64 from the list )

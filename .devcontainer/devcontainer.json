@@ -27,7 +27,7 @@
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
     "remoteUser": "vscode",
 	
-	"workspaceFolder": "/workspace/hbm-vscode-remote-cpp",
+	"workspaceFolder": "/workspace/hbm-vscode-remote",
 	
 	"mounts": [
 		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
@@ -36,6 +36,6 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "sudo chmod 666 /var/run/docker.sock \
-	                   && sudo chown vscode /workspace/hbm-vscode-remote-cpp \
+	                   && sudo chown vscode /workspace/hbm-vscode-remote \
 					   && docker login -u 17a2245e-6667-4128-b203-5a464adeef73 -p 37wRxzF_6B3HyLaQd-azJ19gd-3.uI8Z-1 agorasdk.azurecr.io"
 }
