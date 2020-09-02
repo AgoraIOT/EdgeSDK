@@ -51,7 +51,6 @@ Contact Agora:
     git config --global user.name  "Your Name"
     ```
 1. Launch VS Code 
-1. Open the VS Code 
 1. Press F1 to open VS Code command pallet 
 1. Start typing "Remote-Containers: Open Folder in Container" and press enter
 
@@ -162,6 +161,10 @@ Before starting a local debug session, if you have iotedge running on your host 
     ```bash
     docker login -u {username} -p {password} url 
     ```
+    > TIP: For testing out modules while actively developing, you can start a local registry using the following command: 
+    > **docker run -d -p 5000:5000 --restart=always --name registry registry:2**
+    > then use **localhost:5000** as a registry URL
+
 1. Browse to build/target/x86_64/docker
 1. Build the module container
     ```bash
