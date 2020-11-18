@@ -1,4 +1,4 @@
-FROM agorasdk.azurecr.io/hbm-vscode-remote:2.4.0
+FROM agorasdk.azurecr.io/hbm-vscode-remote:2.5.0
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
@@ -14,7 +14,9 @@ ARG USER_GID=$USER_UID
 EXPOSE 3032
 
 # Configure apt and install packages
-RUN apt-get update \
+RUN groupadd docker \
+    && usermod -aG docker $USERNAME \
+    && apt-get update \
     # Install any additional packages you might need
     # && apt-get -y install  \
     #

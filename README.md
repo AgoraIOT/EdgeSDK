@@ -11,7 +11,7 @@ Contact Agora:
 ## Contents
 
 - [Prerequisites](#prerequisites) 
-- [Clone agora-vscode-remote repo](#clone-agora-vscode-remote-repo)
+- [Clone EdgeSDK repo](#clone-edge-sdk-repo)
 - [Launch the development environment](#launch-the-development-environment)
 - [Setup your dev workspace and generate your first module](#setup-your-dev-workspace-and-generate-your-first-module)
 - [Setup your module local debugging](#setup-your-module-local-debugging)
@@ -33,7 +33,7 @@ Contact Agora:
 > While going through Azure IoT Edge Quickstart, You can skip steps instructing you to install container engine and IoT Edge runtime, you already  installed them in the previous steps.
 > If you already have an IoT Hub and registered a device, you can jump straight to [Deploy a module](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart#deploy-a-module)
 
-## Clone agora-vscode-remote repo
+## Clone EdgeSDK repo
 1. Run PowerShell or gitbash 
 1. Browse the location where you want to clone the repo e.g. C:\Users\{username}\code
 1. Clone the repo
@@ -56,7 +56,7 @@ Contact Agora:
 
 <img src=images\remote_containers_open_folder.png/>
 
-7. Browse to the location where agora-vscode-remote is cloned
+7. Browse to the location where EdgeSDK is cloned
 8. Select the top directory of the repo (the parent of .devcontainer directory) and press open
 9. Wait for the dev container to be built (_this can take several minutes the first time you launch the dev container_)
 <img src=images\building_image.PNG/>
