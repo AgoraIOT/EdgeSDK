@@ -1,6 +1,11 @@
 # Agora Edge SDK
 
  Agora Edge SDK is a collection of libraries and tools packaged in a way that removes the complexity of Agora Edge Applications development. The SDK is delivered in a Docker container that is also used as a development environment with all the tools pre-installed that are needed for developing Agora Edge applications. The container can run on any OS that supports Docker (Windows 10, Mac, Linux). This enables developers to quickly and efficiently write application code. Follow the instructions below to get started.
+ 
+ Watch our Intro video for how to setup the Agora Edge SDK: https://vimeo.com/515496797
+
+ Ready to get build an application? Checkout our Visualization how to: https://vimeo.com/515498047
+
 
 Contact Agora:
 
