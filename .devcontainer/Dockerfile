@@ -1,4 +1,4 @@
-FROM agorasdk.azurecr.io/hbm-vscode-remote:2.5.0
+FROM agorasdk.azurecr.io/hbm-vscode-remote:2.6.0
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
@@ -17,6 +17,9 @@ EXPOSE 3032
 RUN groupadd docker \
     && usermod -aG docker $USERNAME \
     && apt-get update \
+    && wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
+    && dpkg -i packages-microsoft-prod.deb \
+    && apt-get install -y apt-transport-https && apt-get update && apt-get install -y dotnet-sdk-3.1 \
     # Install any additional packages you might need
     # && apt-get -y install  \
     #
@@ -34,4 +37,3 @@ RUN groupadd docker \
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
-

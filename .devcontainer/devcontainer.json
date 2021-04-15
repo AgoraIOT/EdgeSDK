@@ -12,6 +12,7 @@
 	    "PeterJausovec.vscode-docker",
 		"ms-vscode.cpptools",
 		"ms-python.python",
+		"ms-vscode.csharp",
 		"vsciot-vscode.azure-iot-edge",
 		"vsciot-vscode.azure-iot-toolkit",
 		"hookyqr.beautify",
@@ -27,15 +28,18 @@
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
     "remoteUser": "vscode",
 	
-	"workspaceFolder": "/workspace/hbm-vscode-remote",
+	//"workspaceFolder": "/workspace/my-module",
+
+	"workspaceMount": "source=agora-sdk-ws,target=/workspace,type=volume",
+	"workspaceFolder": "/workspace",
 	
 	"mounts": [
-		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
-		"source=agora-dev-volume,target=${containerWorkspaceFolder},type=volume"
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"//,
+		//"source=${workspaceFolderBasename},target=${containerWorkspaceFolder},type=volume"
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "sudo chmod 666 /var/run/docker.sock \
-	                   && sudo chown vscode /workspace/hbm-vscode-remote \
+	                   && sudo chown vscode /workspace \
 					   && docker login -u 17a2245e-6667-4128-b203-5a464adeef73 -p 37wRxzF_6B3HyLaQd-azJ19gd-3.uI8Z-1 agorasdk.azurecr.io"
 }
