@@ -72,29 +72,33 @@ Contact Agora:
 ## Setup your dev workspace
 You can either generate a new module or use the SDK to continue developing as existing one
 
-### Generate a new module  
-1. From the terminal in the panel at the bottom of the VS Code window (if not opened, you can open it from Terminal->New Terminal or "Ctr+Shift+`) run the following command:
+### Generate a new module
+1. Create a new folder for your module and cd into the newly created directory
+    ```bash
+    mkdir my_module && cd my_module
+    ``` 
+2. From the terminal in the panel at the bottom of the VS Code window (if not opened, you can open it from Terminal->New Terminal or "Ctr+Shift+`) run the following command:
     ```bash
     setup-workspace.sh
     ```
 <img src=images\setup_workspace.PNG/>
 
-2. When the workspace is completed successfully, you will see the following message: _Workspace setup is complete ..._ followed by an example showing you what to do next (which will be explained in the next couple of steps)
-3. Generate your first module using genMod: 
+3. When the workspace is completed successfully, you will see the following message: _Workspace setup is complete ..._ followed by an example showing you what to do next (which will be explained in the next couple of steps)
+4. Generate your first module using genMod: 
     ```bash
     Example:
         ./genMod.sh -l py -n my_module -c MyModule -i my-module
     For more help:
         ./genMod.sh -h
     ```
-4. If everything goes well with the module code generation, you should see your module build should run successfully to validate your environment and module generation. For C++ modules you should also see the unit test result.
+5. If everything goes well with the module code generation, you should see your module build should run successfully to validate your environment and module generation. For C++ modules you should also see the unit test result.
 
 <img src=images\cpp_build.PNG\>
 
-5. Browse the directory structure of the module in the file explorer on the left side
-6. Open README.md to get description of the module directory structure and details on how to build the code 
-7. The generated code has a complete sample algorithm that builds and runs as a module, explore the code and use it as starting point to develop you own
-8. The complete API documentation can be found under "deps/hermes-base-cpp/doc/doxygen-cpp/html" 
+6. Browse the directory structure of the module in the file explorer on the left side
+7. Open README.md to get description of the module directory structure and details on how to build the code 
+8. The generated code has a complete sample algorithm that builds and runs as a module, explore the code and use it as starting point to develop you own
+9. The complete API documentation can be found under "deps/hermes-base-cpp/doc/doxygen-cpp/html" 
 
 ### Clone an existing Agora Edge module
 Follow this steps if you already have an existing Agora module you would like to continue to develop and debug in this environment
@@ -136,7 +140,7 @@ Before starting a local debug session, if you have iotedge running on your host 
       docker rm edgeHub
    ```
 
-### C++
+### C++/C#
 1. Build your module code (command palette->Tasks: Run Build Task->Enter then select build-x86_64 from the list )
 
 <img src=images\build_x86.png/>
