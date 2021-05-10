@@ -3,13 +3,13 @@
 # ###############################################################
 # Copyright 2020 Agora Digital Solutions IncS.
 
-# All rights reserved in Agora Digital Solutions Inc. authored and generated cod
-e (including the selection and arrangement of the source code base regardless of
- the authorship of individual files), but not including any copyright interest(s
-) owned by a third party related to source code or object code authored or gener
-ated by non- Agora Digital Solutions Inc. personnel.
+# All rights reserved in Agora Digital Solutions Inc. authored and generated code 
+# (including the selection and arrangement of the source code base regardless of
+#  the authorship of individual files), but not including any copyright interest(s
+# ) owned by a third party related to source code or object code authored or generated 
+# by non- Agora Digital Solutions Inc. personnel.
 # Any use, disclosure and/or reproduction of source code is prohibited unless in
- compliance with the AGORA SOFTWARE DEVELOPMENT KIT LICENSE AGREEMENT.
+# compliance with the AGORA SOFTWARE DEVELOPMENT KIT LICENSE AGREEMENT.
 #################################################################
 from WorkerThread import WorkerThread
 from HBM_PythonAppManagerBindings import *
