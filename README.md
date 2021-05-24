@@ -70,7 +70,7 @@ Contact Agora:
 11. Wait for all extensions to be installed. If reloading VS Code is required, you will be promoted to do so
 
 ## Setup your dev workspace
-You can either generate a new module or use the SDK to continue developing as existing one
+You can either generate a new module or use the SDK to continue developing an existing one
 
 ### Generate a new module
 1. Create a new folder for your module and cd into the newly created directory
@@ -95,10 +95,12 @@ You can either generate a new module or use the SDK to continue developing as ex
 
 <img src=images\cpp_build.PNG\>
 
-6. Browse the directory structure of the module in the file explorer on the left side
-7. Open README.md to get description of the module directory structure and details on how to build the code 
-8. The generated code has a complete sample algorithm that builds and runs as a module, explore the code and use it as starting point to develop you own
-9. The complete API documentation can be found under "deps/hermes-base-cpp/doc/doxygen-cpp/html" 
+6. Open the new module directory in VS Code: File -> Open Folder -> /workspace/{your module name} -> Click OK
+1. Wait for the VS Code to re-launch and install all the required extensions
+1. Browse the directory structure of the module in the file explorer on the left side
+1. Open README.md to get description of the module directory structure and details on how to build the code 
+1. The generated code has a complete sample algorithm that builds and runs as a module, explore the code and use it as starting point to develop you own
+1. The complete API documentation can be found under "deps/hermes-base-cpp/doc/doxygen-cpp/html" 
 
 ### Clone an existing Agora Edge module
 Follow this steps if you already have an existing Agora module you would like to continue to develop and debug in this environment
