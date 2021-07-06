@@ -46,7 +46,7 @@ Contact Agora:
     git clone  https://github.com/AgoraIOT/EdgeSDK.git
     ```
 ## Launch the development environment
-1. Login to agorasdk.azurecr.io container registry: 
+1. Login to agorasdk.azurecr.io container registry using the read-only public credentials: 
     ```powershell
     docker login -u 17a2245e-6667-4128-b203-5a464adeef73 -p 37wRxzF_6B3HyLaQd-azJ19gd-3.uI8Z-1 agorasdk.azurecr.io 
     ```
