@@ -46,10 +46,7 @@ Contact Agora:
     git clone  https://github.com/AgoraIOT/EdgeSDK.git
     ```
 ## Launch the development environment
-1. Login to agorasdk.azurecr.io container registry using the read-only public credentials: 
-    ```powershell
-    docker login -u 17a2245e-6667-4128-b203-5a464adeef73 -p 37wRxzF_6B3HyLaQd-azJ19gd-3.uI8Z-1 agorasdk.azurecr.io 
-    ```
+1. You will need to acquire a username and password to pull the development environment containing the Agora SDK.  Please go to [agoraiot.com support pages](https://www.agoraiot.com/support) and request a username/password and the instruction for pulling the image.
 1. Configure git:
     ```powershell
     git config --global user.email "you@example.com"
