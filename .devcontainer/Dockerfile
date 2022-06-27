@@ -1,4 +1,4 @@
-FROM agorasdk.azurecr.io/hbm-vscode-remote:2.7.0
+FROM agorasdk.azurecr.io/hbm-vscode-remote:2.7.1
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
