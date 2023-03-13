@@ -1,6 +1,13 @@
-# Agora Edge SDK
+# Agora Edge SDK 1.0 (HBM)
 
- Agora Edge SDK is a collection of libraries and tools packaged in a way that removes the complexity of Agora Edge Applications development. The SDK is delivered in a Docker container that is also used as a development environment with all the tools pre-installed that are needed for developing Agora Edge applications. The container can run on any OS that supports Docker (Windows 10, Mac, Linux). This enables developers to quickly and efficiently write application code. Follow the instructions below to get started.
+---
+
+IMPORTANT:
+This site contains the original Agora Edge SDK 1.0.  Only use this if you are trying to develop a C++ edge application.  For Python and .NET see https://agoraiot.github.io, which contains the documentation for Agora Edge Apps SDK 2.0.
+
+---
+
+Agora Edge SDK is a collection of libraries and tools packaged in a way that removes the complexity of Agora Edge Applications development. The SDK is delivered in a Docker container that is also used as a development environment with all the tools pre-installed that are needed for developing Agora Edge applications. The container can run on any OS that supports Docker (Windows 10, Mac, Linux). This enables developers to quickly and efficiently write application code. Follow the instructions below to get started.
  
  Watch our Intro video for how to setup the Agora Edge SDK: https://vimeo.com/515496797
 
