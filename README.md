@@ -7,18 +7,7 @@ This site contains the original Agora Edge SDK 1.0.  Only use this if you are tr
 
 ---
 
-Agora Edge SDK is a collection of libraries and tools packaged in a way that removes the complexity of Agora Edge Applications development. The SDK is delivered in a Docker container that is also used as a development environment with all the tools pre-installed that are needed for developing Agora Edge applications. The container can run on any OS that supports Docker (Windows 10, Mac, Linux). This enables developers to quickly and efficiently write application code. Follow the instructions below to get started.
- 
- Watch our Intro video for how to setup the Agora Edge SDK: https://vimeo.com/515496797
-
- Ready to get build an application? Checkout our Visualization how to: https://vimeo.com/515498047
-
-
-Contact Agora:
-
-  <a href="mailto:PARTNERS@AGORAIOT.COM">
-    <img src="https://img.shields.io/badge/Ask-Agora-blue.svg" alt="Ask Agora">
-  </a>
+Agora Edge SDK is a collection of libraries and tools packaged in a way that removes the complexity of Agora Edge Applications development. The SDK is delivered in a Docker container that is also used as a development environment with all the tools pre-installed that are needed for developing Agora Edge applications. The container can run on any OS that supports Docker (Windows 10, Mac, Linux). Follow the instructions below to get started.
 
 ## Contents
 
@@ -91,7 +80,7 @@ You can either generate a new module or use the SDK to continue developing an ex
 4. Generate your first module using genMod: 
     ```bash
     Example:
-        ./genMod.sh -l py -n my_module -c MyModule -i my-module
+        ./genMod.sh -l cpp -n my_module -c MyModule -i my-module
     For more help:
         ./genMod.sh -h
     ```
@@ -135,7 +124,6 @@ You need to do this one time setup to enable the use of IoT Edge Simulator to in
 
 Before starting a local debug session, if you have iotedge running on your host OS, stop iotedge service and remove edgeHub container:
 
-    
    ```bash
    Windows 10, run powershell as administrator and stop the service from powershell:
       Stop-Service iotedge
@@ -146,29 +134,13 @@ Before starting a local debug session, if you have iotedge running on your host 
       docker rm edgeHub
    ```
 
-### C++/C#
+### C++
 1. Build your module code (command palette->Tasks: Run Build Task->Enter then select build-x86_64 from the list )
 
 <img src=images\build_x86.png/>
 
 2. Launch a debug session (F5 or the debug symbol on the left side) 
 3. Add breakpoints and step through your code  
-
-### Python
-1. In VS Code go to debug view and select "HBM Launch" and click on launch (the green arrow)
-
-<img src=images\py_launch_hbm.PNG/>
-
-2. Now switch the debug config to "Python Attach" and click on the green arrow
-
-<img src=images\py_attach.PNG/>
-
-3. Add breakpoints and step through your Python code
-
-<img src=images\py_debug.PNG/>
-
-4. When done, disconnect the Python session and then stop the HBM session
-
 
 ## Build module container image 
 
@@ -195,8 +167,3 @@ Before starting a local debug session, if you have iotedge running on your host 
     python3 -m http.server 3032 >/dev/null 2>&1 &
     ```
 2. Open http://localhost:3032/ in your web browser
-
-> Note: Python API documentation is coming soon. There is one-to-one mapping between C++ APIs and Python APIs in Agora Edge SDK. In the meantime, you can use C++ API documentation for Python until Python docs are ready.
-
-## Next Steps
-[Contact Agora](mailto:PARTNERS@AGORAIOT.COM) for some exciting real world IoT Edge use cases 
