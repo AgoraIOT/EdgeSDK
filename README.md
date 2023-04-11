@@ -3,7 +3,7 @@
 ---
 
 IMPORTANT:
-This site contains the original Agora Edge SDK 1.0.  Only use this if you are trying to develop a C++ edge application.  For Python and .NET see https://agoraiot.github.io, which contains the documentation for Agora Edge Apps SDK 2.0.
+This site contains the original Agora Edge SDK 1.0.  Only use this if you are trying to develop a C++ edge application.  For Python and .NET see https://slb-edge.github.io/agoraiot, which contains the documentation for Agora Edge Apps SDK 2.0.
 
 ---
 
